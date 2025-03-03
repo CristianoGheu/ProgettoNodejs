@@ -12,6 +12,21 @@ Le API JSON RESTful consentono:
 
 - Consentono di visualizzare tutti gli intervalli, di filtrare per obiettivi inclusi, e filtrare per data di inizio e fine.
 
+Ho scelto di dividere la parte per la gestione degli utenti e degli intervalli in due file.
+Nel file index.js ho gestito il routing del progetto e inserito la costante server con la porta dove viene avviata l’applicazione.
+
+MySQL
+Come richiesto dal progetto ho implementato MySQL:
+
+-Ho creato un file migration.js per ricostruire la struttura del database.
+
+-Ho creato un file db.js per gestire la connessione al database.
+
+-Ho creato un file queries.js per assicurarmi che tutte le query siano sicure contro attacchi di tipo SQL Injection utilizzando i prepared statement.
+
+Per verificare le funzioni di query ho creato un file test.js.
+
+Ho diviso i test in due file per una piu facile lettura e modifica futura.
 Ho inserito dei test tramite Sinon, Mocha, Chai e Supertest:
 
 - Mocha per il test del framework
